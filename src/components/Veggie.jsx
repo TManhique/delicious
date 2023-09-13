@@ -25,7 +25,7 @@ function Veggie() {
             );
 
           const data = await api.json();
-          localStorage.setItem("popular", JSON.stringify(data.recipes))
+          localStorage.setItem("veggie", JSON.stringify(data.recipes))
           setVeggie(data.recipes)
           console.log(data);
 
@@ -47,7 +47,7 @@ function Veggie() {
               arrows: false,
               pagination: false,
               drag: "free",
-              gap: "5rem",
+              gap: "2rem",
 
             }}>
               {Veggie.map((recipe) =>{
@@ -77,8 +77,8 @@ const Wrapper = styled.div`
 `;
 
 const Card = styled.div`
-  min-height: 25rem;
-  border-radius: 2rem;
+  min-height: 18rem;
+   border-radius: 2rem;
   overflow: hidden;
   position: relative;
 
