@@ -1,11 +1,16 @@
 * {
-
   margin: 0;
   padding: 0;
-  box-sizing: 0;
-  font-family: "Monsterrat", sans-serif;
+  box-sizing: border-box; /* Change this to border-box */
+  font-family: "Montserrat", sans-serif; /* Correct the font-family name */
 }
 
+&.active {
+  background: linear-gradient(to right, #f27121, #e94057);
+  svg {
+    color: aliceblue;
+  }
+}
 
 body {
   margin: 0;
@@ -14,7 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0% 20%;
+  margin: 0 15%; /* Change the margin to use pixels instead of a percentage */
 }
 
 code {
@@ -22,25 +27,19 @@ code {
     monospace;
 }
 
-h4{
+h4 {
   font-size: 1rem;
   color: rgb(56, 56, 56);
-
+  margin: 1rem 0; /* Reduce the top and bottom margin */
 }
 
-h4{
-  font-size: 1rem;
-  color: rgb(56, 56, 56);
-  margin: 2rem 0rem;
-}
-
-h3{
+h3 {
   font-size: 1.5rem;
   color: rgb(56, 56, 56);
-  line-height: 2.5rem;
-  margin: 2rem 0rem;
+  line-height: 2rem; /* Adjust line-height for better readability */
+  margin: 1rem 0; /* Reduce the top and bottom margin */
 }
 
-a{
+a {
   color: rgb(56, 56, 56);
 }
