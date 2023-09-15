@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import {FaSearch} from 'react-icons/fa';
 import {useNavigate} from 'react-router-dom'
 
+
 function Search() {
   
   const [input, setInput] = useState("");
